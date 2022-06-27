@@ -9,7 +9,7 @@ const
 
     boton.addEventListener('click', () => {
         if((a.value == "") || (b.value == "") || (c.value == "") || (d.value == "")){
-            window.alert("Debe ingresar valores diferentes");
+            window.alert("Los campos no pueden estar vacíos");
         }
         else if((a.value == b.value) || (a.value == c.value) || (a.value == d.value)){
             window.alert("Debe ingresar valores diferentes");

@@ -1,51 +1,100 @@
-body {
-    background-color:darkslateblue;
-}
-
 section {
-    width: 200px;
-    height: 150px;
+    width: 280px;
+    height: 350px;
     margin-top: 25px;
-    margin-left: 690px;
+    margin-left: 650px;
+    background-color: mediumslateblue;
+    border-radius: 10px;
 }
 
 #numeroUno {
     border-radius: 10px;
-    margin-top: 8px;
-    margin-left: 10px;
+    margin-top: 25px;
+    margin-left: 33px;
     padding-left: 10px;
+    width: 200px;
+    height: 30px;
 }
 
 #numeroDos {
     border-radius: 10px;
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 33px;
     padding-left: 10px;
+    width: 200px;
+    height: 30px;
 
 }
 #numeroTres {
     border-radius: 10px;
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 33px;
     padding-left: 10px;
+    width: 200px;
+    height: 30px;
 
 }
 
 #numeroCuatro {
     border-radius: 10px;
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 33px;
     padding-left: 10px;
+    width: 200px;
+    height: 30px;
 
 }
 
 
 #titulo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:sans-serif;
     font-size: 40px;
     width: 210px;
     margin-top: 100px;
     margin-left: 680px;
+    font-style:initial;
+    text-decoration:underline;
+    color:indigo;
     
 }
 
+#boton {
+    border-style:initial;
+    border-radius: 5px;
+    margin-left: 105px;
+    margin-top: 8px;
+    width: 70px;
+    height: 50px;
+    align-items: center;
+    
+}
+#boton:hover { 
+    background: rgb(105, 44, 184); 
+    color: white; 
+    width: 70px;
+    height: 50px;
+  }
+
+  #boton:active {  
+    background: rgb(83, 25, 158);  
+    color: white; 
+    width: 70px;
+    height: 50px;
+  } 
+
+  #resultadoMayor {
+    font-family:sans-serif;
+    font-size: 10pt;
+    margin-left: 70px;
+    color: aliceblue;
+
+  }
+
+  #resultadoMenor {
+    font-family:sans-serif;
+    font-size: 10pt;
+    margin-left: 70px;
+    color: aliceblue;
+
+
+  }
