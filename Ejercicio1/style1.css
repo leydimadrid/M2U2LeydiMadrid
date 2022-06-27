@@ -1,0 +1,44 @@
+body {
+    background-color:darkslateblue;
+}
+
+#contenedor {
+    width: 500px;
+    align-items: center;
+    margin-left: 520px;
+    margin-top: 150px;
+}
+
+#nombreCompleto {
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+
+#escogerMaterias {
+    border-radius: 10px;
+}
+
+#totalMaterias {
+    border-radius: 10px;
+}
+
+#descuento {
+    border-radius: 10px;
+}
+
+#totalaPagar {
+    border-radius: 10px;
+    align-items: center;
+}
+
+#costosFijos {
+    width: 170px;
+    background-color: blueviolet;
+    align-items: center;
+    margin-left: 168px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
