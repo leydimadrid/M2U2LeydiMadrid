@@ -70,4 +70,4 @@ let click=0;
 
 /*Estimados profesores, no supe como realizar la última parte del algoritmo,
  el de sumar todas las materias, los costos fijos y aplicar el 20% descuento,
- mil disculpas, estaré más atenta en clases. */
+ mil disculpas, estaré más atenta en clases. */ 
