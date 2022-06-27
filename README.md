@@ -3,4 +3,5 @@
 
 :star: En este repositorio encontrarás la solución de 2 problemas algorítmicos.
 
-:memo: Se realiza un diagrama de flujo para cada problema y posteriormente se pasa a la programación.
+:memo: Se realiza un diagrama de flujo para cada problema.
+        
