@@ -1,44 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color:darkslateblue;
-}
-
-#contenedor {
-    width: 500px;
-    align-items: center;
-    margin-left: 520px;
-    margin-top: 150px;
-}
-
-#nombreCompleto {
-    border-radius: 10px;
-    align-items: center;
-
-}
-
-
-#escogerMaterias {
-    border-radius: 10px;
-}
-
-#totalMaterias {
-    border-radius: 10px;
-}
-
-#descuento {
-    border-radius: 10px;
-}
-
-#totalaPagar {
-    border-radius: 10px;
-    align-items: center;
-}
-
-#costosFijos {
-    width: 170px;
     background-color: blueviolet;
-    align-items: center;
-    margin-left: 168px;
-    border-radius: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
+}
+
+#titulo  {
+    font-family:sans-serif;
+    font-size: 40px;
+    width: 280px;
+    margin-left: 280px;
+    margin-bottom: 10px;
+    font-style:initial;
+    text-decoration:underline;
+    color:indigo;
+}
+
+
+.datosEstudiante {
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-family:sans-serif;
+    color: white;
+}
+
+.datosEstudiante h1{
+    text-align: center;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+
+.nombrecom {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.inscribirmateria{
+    padding-top: 1.6%;
+    padding-bottom: 1.6%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    width: 40%;
+    color: #000000;
+    font-weight: bold;
+
+}
+.valmatricula{
+    padding-top: 1.6%;
+    padding-bottom: 1.6%;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 40%;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.controles2{
+    width: 49%;
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #1B4A9B;
+    font-weight: bold;
+}
+
+.materias1{
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+}
+.nommateria {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    color: #000000;
+    font-weight: bold;
+
+}
+.valmateria{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.tabla{
+    width: 100%;
+}
+
+.tabla th, td{
+    border: solid rgb(154, 78, 216);
+    border-radius: 2px;
+    padding: 1%;
+    text-align: center;
+    color: #000000;
+}
+.tabla th{
+    background: rgb(157, 138, 243);
+    color: #000000;
+}
+
+.totalaPagar{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.final{
+    margin-top: 3%;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    font-family: sans-serif;
+    background-color:rgb(157, 138, 243);
+    width: 30%;
+    height: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-left: 280px;
 }

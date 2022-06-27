@@ -5,42 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style1.css" rel="stylesheet" type="text/css">
-    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="style1.css">
+    <title>Ejercicio #2</title>
 </head>
 <body>
-    <div id="contenedor">
-    <section>
-        <div id="formulario" style="text-align: center">
-        <fieldset>
-            <legend> Inscripción materias </legend>
-            <p id="nombreCompleto"> Nombre completo: <input id="nombreCompleto" type="text" name="Nombre completo" /></p>
-            <p>Escoger materias: </p> 
-                <input id="escogerMaterias" type="text" name="Escoger materias"/> 
-
-            <select name="Materias">
-                <option>Inglés $250.000</option>
-                <option>Matemática $200.000</option>
-                <option>Español $200.000</option>
-                <option>Ética $100.000</option>
-            </select>
-            
-                <p id="totalMaterias"> </p>
-                    Total materias <input id="totalMaterias" type="text" name="Total materias"/> 
-                <p id="descuento"> 20% descuento</p>
-                    <input id="descuento" type="text" name="20% descuento en las materias"/> 
-                    <p id="costosFijos"> Costos fijos 
-                        <option>Papelería $20.000</option>
-                        <option>Carné $8.000</option>   
-                    </p>
-                    <p id="totalaPagar"> Total a pagar <input id="totalaPagar" type="text" name="Total a pagar"/> </p>
-                    </p>
-                
-         <input type="submit" value="Calcular valor">
-        </fieldset>
-        </div>
+    <section class="datosEstudiante">
+        <p id="titulo">Ejercicio #2 </p>
+        <input class="nombrecom" type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Ingresa tu nombre">
+        <input class="nommateria" type="text" name="nombreMateria" id="nombreMateria" placeholder="Nombre de la materia">
+        <input class="valmateria" type="number" name="valorMateria" id="valorMateria" placeholder="Valor de la materia">
+        <input class="inscribirmateria" type="button" id="inscribir" value="Registrar materia">
+        <h5 id="Materias"></h5>
+        <table class="tabla" id="tabla">
+            <tr>
+                <th>Materia</th>
+                <th>Valor</th>
+            </tr>
+        </table>
+        <input class="valmatricula" type="button" id="totalMaterias" value=" Total Materias">
+        <p class="totalaPagar" id="totalaPagar"></p>
+        <p class="final" id="final"> Costos fijos 
+            <br> Papelería $20.000
+            <br> Carné $8.000
+        </p>
     </section>
-    </div>
 </body>
-<script src="index.js"> </script>
+<script src="index1.js"></script>
 </html>
