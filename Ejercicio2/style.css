@@ -9,21 +9,21 @@ section {
     margin-left: 690px;
 }
 
-#numUno {
+#numeroUno {
     border-radius: 10px;
     margin-top: 8px;
     margin-left: 10px;
     padding-left: 10px;
 }
 
-#numDos {
+#numeroDos {
     border-radius: 10px;
     margin-top: 8px;
     margin-left: 10px;
     padding-left: 10px;
 
 }
-#numTres {
+#numeroTres {
     border-radius: 10px;
     margin-top: 8px;
     margin-left: 10px;
@@ -31,7 +31,7 @@ section {
 
 }
 
-#numCuatro {
+#numeroCuatro {
     border-radius: 10px;
     margin-top: 8px;
     margin-left: 10px;
@@ -49,8 +49,3 @@ section {
     
 }
 
-#boton {
-    background-color: aqua;
-    margin-left: 10px;
-    margin-top: 8px;
-}
