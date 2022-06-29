@@ -67,14 +67,6 @@ body {
     text-align: center;
 }
 
-.controles2{
-    width: 49%;
-    padding: 2%;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    color: #1B4A9B;
-    font-weight: bold;
-}
 
 .materias1{
     font-weight: bold;
@@ -127,9 +119,9 @@ body {
     font-size: 12pt;
     font-family: sans-serif;
     background-color:rgb(157, 138, 243);
-    width: 30%;
+    width: 40%;
     height: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    margin-left: 280px;
+    margin-left: 235px;
 }

@@ -8,6 +8,7 @@ const
     totalaPagar = document.getElementById('totalaPagar'),
     final = document.getElementById('final'),
     botonL = document.getElementById('botonL')
+    tabla = document.getElementById('tabla')
 
 let baseDatos=[];
 let clicks = 0;
@@ -34,14 +35,14 @@ inscribir.addEventListener('click', () => {
 function agregar(){
     baseDatos.push(nuevaMateria);
     document.getElementById("tabla").innerHTML += '<tbody><td>' + 
-    nuevaMateria.materia + '</td><td>$ ' +nuevaMateria.valor + '</td></tbody>';
+    nuevaMateria.materia + '</td><td>$ ' + nuevaMateria.valor + '</td></tbody>';
 };
 
 totalMaterias.addEventListener('click', () => {
     let costosFijos=28000;
         costoMatricula=[];
         sum=0;
-        masCostoFijo=14;
+        masCostosFijos=0;
         conDescuento=0;
 
     if(baseDatos == ""){
@@ -50,24 +51,16 @@ totalMaterias.addEventListener('click', () => {
     else{
         
         for (let j=0; j<baseDatos.length; j++) {
-            costoMatricula.push(parseInt(baseDatos[j].costo))
+            costoMatricula.push(parseInt(baseDatos[j].valor))
         }
+
 
         for (let i = 0; i < costoMatricula.length; i++){ 
             sum += costoMatricula[i];
         }
-
-        masCostoFijo = sum + costoMatricula;
-        conDescuento = masCostoFijo * 0.8;
-        baseDatos.length + "Materias";
-        totalaPagar.innerHTML="El valor de su matricula es: $ " + sum;
-        final.innerHTML="El valor total de las materias es: $ " 
-        + '<br>' + "Con el descuento del 20% el total final de su matricula es: $ " + conDescuento + masCostoFijo;
+        costoMatricula = sum + nuevaMateria.valor;
+        masCostosFijos = costosFijos;
+        conDescuento = costoMatricula * 0.8;
+        final.innerHTML="El valor total a pagar con el 20% de descuento más costos fijos es: $ " + (sum * 0.8 + masCostosFijos);
     }
 })
-
-let click=0;
-
-/*Estimados profesores, no supe como realizar la última parte del algoritmo,
- el de sumar todas las materias, los costos fijos y aplicar el 20% descuento,
- mil disculpas, estaré más atenta en clases. */ 
