@@ -5,42 +5,24 @@ const
     d = document.getElementById('numeroCuatro'),
     boton = document.getElementById('boton'),
     parrafoMayor = document.getElementById('resultadoMayor'),
-    parrafoMenor = document.getElementById('resultadoMenor')
+    parrafoMenor = document.getElementById('resultadoMenor');
 
     boton.addEventListener('click', () => {
-        if((a.value == "") || (b.value == "") || (c.value == "") || (d.value == "")){
-            window.alert("Los campos no pueden estar vacíos");
+        
+        if(a.value == "" || b.value == "" || c.value == "" || d.value == ""){
+            alert("Los campos no pueden estar vacíos");
         }
-        else if((a.value == b.value) || (a.value == c.value) || (a.value == d.value)){
-            window.alert("Debe ingresar valores diferentes");
+        else if(a.value == b.value || a.value == c.value || a.value == d.value || b.value == c.value || b.value == d.value || c.value == d.value){
+            alert("Debe ingresar valores diferentes");
         }
-        else if((b.value == c.value) || (b.value == d.value)){
-            window.alert("Debe ingresar valores diferentes");
-        }
-        else if((c.value == d.value)){
-            window.alert("Debe ingresar valores diferentes");
-        }
-        else { 
-            let valorMayor = Math.max(a.value, b.value, c.value, d.value)
-            if(valorMayor == a.value)  {
-                parrafoMayor.innerHTML = 'El número mayor es: '+ valorMayor
-            }else if(valorMayor == b.value) {
-                parrafoMayor.innerHTML = 'El número mayor es: '+ valorMayor
-            }else if(valorMayor == c.value) {
-                parrafoMayor.innerHTML = 'El número mayor es: '+ valorMayor
-            }else if(valorMayor == d.value) {
-                parrafoMayor.innerHTML = 'El número mayor es: '+ valorMayor
-            }
+        
+        else if(a.value < 1 || b.value < 1 || c.value < 1 || d.value < 1){
+            alert("Debe ingresar números mayores a 0");
+        }else { 
+            let valorMayor = Math.max(a.value, b.value, c.value, d.value);
+            let valorMenor = Math.min(a.value,b.value,c.value,d.value);
 
-            let valorMenor = Math.min(a.value,b.value,c.value,d.value)
-            if(valorMenor == a.value)  {
-                parrafoMenor.innerHTML = 'El número menor es: '+ valorMenor
-            }else if(valorMenor == b.value) {
-                parrafoMenor.innerHTML = 'El número menor es: '+ valorMenor
-            }else if(valorMenor == c.value) {
-                parrafoMenor.innerHTML = 'El número menor es: '+ valorMenor
-            }else if(valorMenor == d.value) {
-                parrafoMenor.innerHTML = 'El número menor es: '+ valorMenor
-            }
+            parrafoMayor.innerHTML = 'El número mayor es: '+ valorMayor;
+            parrafoMenor.innerHTML = 'El número menor es: '+ valorMenor;
         }
-    })
+    });
